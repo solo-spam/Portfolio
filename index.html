@@ -340,6 +340,7 @@
       background: radial-gradient(circle at top right, rgba(201,168,76,0.05), transparent 60%);
       opacity: 0;
       transition: opacity 0.3s;
+      pointer-events: none;
     }
 
     .project-card:hover {
@@ -400,6 +401,8 @@
       align-items: center;
       gap: 0.4rem;
       transition: gap 0.2s;
+      position: relative;
+      z-index: 10;
     }
 
     .project-link:hover { gap: 0.7rem; }
